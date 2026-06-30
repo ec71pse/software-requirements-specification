@@ -1,84 +1,48 @@
 # software-requirements-specification
-# Chatty 2.0
+## Проект: Chatty 2.0
 
-## About the Project
+**Тип проекта:** веб-приложение для изучения английского языка.
 
-**Chatty 2.0** is a web application for learning English designed as an improved version of the original Chatty platform. The project extends the existing functionality by introducing a personal vocabulary, flashcards, and self-study tools to make vocabulary acquisition more effective.
+### Цель проекта
+Разработать вторую версию веб-приложения Chatty, расширив функциональность предыдущей версии за счет внедрения инструментов для работы со словарем и карточками изучения слов. Решение должно предоставить пользователям удобный доступ к поиску и сохранению слов, а также поддерживать процесс их запоминания с помощью режима самопроверки.
 
-The system supports two user roles:
+### Моя роль (Системный аналитик)
 
-* **Students** — search for new words, build a personal vocabulary, create flashcards, and practice with self-testing.
-* **Teachers** — create and assign learning activities for students.
+В рамках проекта выполнял(а):
 
----
+* сбор и анализ бизнес-требований;
+* выявление и описание функциональных и нефункциональных требований;
+* моделирование бизнес-процессов и пользовательских сценариев;
+* описание ролей пользователей и вариантов использования системы (Use Case);
+* проектирование структуры данных для хранения информации о пользователях, словах, карточках и заданиях;
+* определение требований к интеграции со сторонними словарными, аудио- и видеосервисами;
+* формирование требований к производительности, надежности, безопасности и совместимости системы;
+* подготовку проектной документации для команды разработки.
 
-## Project Goal
+### Функциональные возможности системы
 
-The goal of the project was to define clear and complete software requirements for the next version of the application, ensuring that the development team had a well-structured specification covering both business needs and technical constraints.
+* Поиск перевода и подробной информации о словах.
+* Прослушивание произношения слов.
+* Просмотр контекстных видеоматериалов с использованием искомого слова.
+* Ведение личного словаря пользователя (добавление, просмотр и удаление слов).
+* Создание карточек для изучения слов из личного словаря.
+* Управление карточками (создание и удаление).
+* Режим самопроверки знаний с возможностью проверки правильности перевода слова.
+* Поддержка ролей «Ученик» и «Преподаватель», включая создание и назначение учебных заданий.
 
----
+### Основные требования к системе
 
-## My Role — System Analyst
+* Работа в современных браузерах (Chrome, Safari).
+* Обязательная авторизация пользователей.
+* Интеграция со сторонними словарными сервисами и библиотеками аудио/видео.
+* Использование PostgreSQL в качестве системы управления базами данных.
+* Использование HTML5 при разработке пользовательского интерфейса.
+* Время загрузки страниц — не более 3 секунд.
+* Добавление слова в личный словарь — не более 1 секунды.
+* Доступность системы — не менее 99% в дневное время.
 
-As a **System Analyst**, I was responsible for:
+### Результат проекта
 
-* gathering and analyzing business requirements;
-* eliciting and documenting functional and non-functional requirements;
-* identifying user roles and business processes;
-* describing user scenarios (Use Cases);
-* defining the system's data model and core entities;
-* specifying integrations with external dictionary, audio, and video services;
-* documenting performance, security, availability, and compatibility requirements;
-* preparing a complete **Software Requirements Specification (SRS)** for the development team.
+Подготовлена полная спецификация требований к системе (Software Requirements Specification, SRS), включающая описание функциональных и нефункциональных требований, пользовательских сценариев, ролей, структуры данных и требований к интеграциям. Документация стала основой для проектирования архитектуры и последующей реализации веб-приложения командой разработки.
 
----
-
-## Key Features
-
-### Dictionary
-
-* Search for word translations.
-* Display definitions and additional word information.
-* Listen to pronunciation.
-* Watch contextual videos containing the searched word.
-* Manage a personal vocabulary (add, view, and remove words).
-
-### Flashcards
-
-* Create flashcards from saved vocabulary.
-* Manage flashcards.
-* Practice vocabulary using a self-testing mode.
-
-### User Roles
-
-* Student
-* Teacher
-
----
-
-## Non-Functional Requirements
-
-* Browser support: **Chrome**, **Safari**
-* Mandatory user authentication
-* Integration with third-party dictionary, audio, and video services
-* PostgreSQL as the primary database
-* HTML5-based web interface
-* Page loading time ≤ **3 seconds**
-* Word addition time ≤ **1 second**
-* System availability ≥ **99%** during daytime
-
----
-
-## Deliverables
-
-The final outcome of the project is a complete **Software Requirements Specification (SRS)** that includes:
-
-* Functional Requirements
-* Non-Functional Requirements
-* User Roles
-* Use Cases
-* Business Rules
-* Data Model
-* Integration Requirements
-* System Constraints
 
